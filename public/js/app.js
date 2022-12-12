@@ -3,13 +3,10 @@ const search = document.querySelector('input')
 const msgOne = document.querySelector('#msg-1')
 const msgTwo = document.querySelector('#msg-2')
 
-// msgOne.textContent = 'From JavaScript'
-
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const location = search.value
-    console.log(location)
 
     msgOne.textContent = 'Loading...'
     msgTwo.textContent = ''
